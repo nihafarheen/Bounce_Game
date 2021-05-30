@@ -33,21 +33,18 @@ function keyUpHandler(e) {
 
 function renderScreen(){
     context.clearRect(0, 0, canvas.width, canvas.height);
+
     if((ball.x + ball.r) >= plate.x && (ball.x + ball.r) <= (plate.x + plate.w) && (ball.y + ball.r) <= plate.h){
         ball.reverseY();
     } 
+    
     ball.drawBall();
+
     if(rightPressed) {plate.moveRight();}
     if(leftPressed) {plate.moveLeft();}
     plate.drawPlate();
-    // renderScreen();
-    console.log('working...');
-    // requestAnimationFrame(renderScreen);
+
+    requestAnimationFrame(renderScreen);
 }
 
-// renderScreen();
-
-setInterval(() => {
-    renderScreen();
-}, 1);
-// requestAnimationFrame(renderScreen);
+requestAnimationFrame(renderScreen);
