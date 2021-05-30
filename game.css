@@ -1,0 +1,23 @@
+:root {
+    --game-bg: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    --canvas-bg: white;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: var(--game-bg);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#canvas {
+    background-color: var(--canvas-bg);
+}
