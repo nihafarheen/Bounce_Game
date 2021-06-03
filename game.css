@@ -16,8 +16,38 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 #canvas {
     background-color: var(--canvas-bg);
+}
+
+#score, #life{
+    position: absolute;
+    height: 70px;
+    width: 140px;
+    background-color: white;
+    top: 20px;
+}
+
+#score{
+    left: 20px;
+}
+
+#life{
+    right: 20px;
+}
+
+#score h3, #life h3{
+    color: red;
+    text-align: center;
+    font-size: larger;
+}
+
+#score h2, #life h2{
+    margin-top: 15px;
+    color: red;
+    text-align: center;
+    font-size: larger;
 }

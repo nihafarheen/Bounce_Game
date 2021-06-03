@@ -1,6 +1,6 @@
 class Ball {
     constructor(cw, ch, r, ctx){
-        this.speed = 0.5;
+        this.speed = 1.5;
         this.x = cw/2;
         this.y = ch - (r);
         this.cw = cw;
@@ -25,22 +25,28 @@ class Ball {
     }
 
     detectCollision() {
+        let value = false;
         if(this.x + this.dx > this.cw - this.r || this.x + this.dx < this.r) {
             this.reverseX();
         }
-        if(this.y + this.dy > this.ch - this.r || this.y + this.dy < this.r) {
+        if(this.y + this.dy < this.r) {
+            this.reverseY();
+        }
+        if(this.y + this.dy > this.ch - this.r){
+            value = true;
             this.reverseY();
         }
         this.nextPosition();
+        return value;
     }
 
     drawBall() {
         this.ctx.beginPath();
         this.ctx.arc(this.x, this.y, this.r, 0, Math.PI*2);
-        this.ctx.fillStyle = "black";
+        this.ctx.fillStyle = "red";
         this.ctx.fill();
         this.ctx.closePath();
-        this.detectCollision();
+        return this.detectCollision();
     }
 }
 
@@ -67,9 +73,31 @@ class Plate {
     drawPlate(){
         this.ctx.beginPath();
         this.ctx.rect(this.x, this.y, this.w, this.h);
-        this.ctx.fillStyle = "#FF0000";
+        this.ctx.fillStyle = "black";
         this.ctx.fill();
         this.ctx.closePath();
         // console.log(1);
+    }
+}
+
+class Brick{
+    constructor(x, y, ctx){
+        this.x = x;
+        this.y = y;
+        this.allow = false;
+        this.life = Math.ceil(Math.random() * 3);
+        this.color = this.life == 3 ? '#F72585' : this.life == 2 ? '#3A0CA3' : '#4CC9F0';
+        this.w = 140;
+        this.h = 20;
+        this.ctx = ctx;
+        this.score = this.life;
+    }
+
+    drawBrick(){
+        this.ctx.beginPath();
+        this.ctx.rect(this.x, this.y, this.w, this.h);
+        this.ctx.fillStyle = this.color;
+        this.ctx.fill();
+        this.ctx.closePath();
     }
 }
