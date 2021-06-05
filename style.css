@@ -1,1 +1,58 @@
-hi
+body {
+    background-image: url('bgimgmain.jpg');
+    background-size:cover;
+  }
+  div.buttonstart{
+text-align: center;
+  }
+  h1{
+    font-family:Bungee Shade;
+    font-size: 120px;
+    margin-left: 400px;
+    color: #FFFFFF;
+  }
+  
+button{
+    background: #0F091E;
+    background-image: -webkit-linear-gradient(top, #0F091E, #2B62BB);
+    background-image: -moz-linear-gradient(top, #0F091E, #2B62BB);
+    background-image: -ms-linear-gradient(top, #0F091E, #2B62BB);
+    background-image: -o-linear-gradient(top, #0F091E, #2B62BB);
+    background-image: -webkit-gradient(to bottom, #0F091E, #2B62BB);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    height: 100px;
+    line-height: 39px;
+    color: #FFFFFF;
+    font-family: 'Press Start 2P', cursive;
+    width: 300px;
+    font-size: 50px;
+    font-weight: 500;
+    padding: 33px;
+    -webkit-box-shadow: -4px 11px 21px 7px #000000;
+    -moz-box-shadow: -4px 11px 21px 7px #000000;
+    box-shadow: -4px 11px 21px 7px #000000;
+    text-shadow: -3px 9px 71px #0059A0;
+    border: solid #000000 3px;
+    text-decoration: none;
+    display: inline-block,center;
+    cursor: pointer;
+    text-align: center;
+    margin:auto;
+ }
+ 
+ .btn:hover {
+    border: solid #337FED 1px;
+    background: #1E62D0;
+    background-image: -webkit-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -moz-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -ms-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -o-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -webkit-gradient(to bottom, #1E62D0, #3D94F6);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+ }
+ 
