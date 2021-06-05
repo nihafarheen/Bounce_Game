@@ -4,8 +4,14 @@ body {
   }
   div.buttonstart{
 text-align: center;
-margin-top: 165px;
   }
+  h1{
+    font-family:Bungee Shade;
+    font-size: 120px;
+    margin-left: 400px;
+    color: #FFFFFF;
+  }
+  
 button{
     background: #0F091E;
     background-image: -webkit-linear-gradient(top, #0F091E, #2B62BB);
@@ -13,16 +19,16 @@ button{
     background-image: -ms-linear-gradient(top, #0F091E, #2B62BB);
     background-image: -o-linear-gradient(top, #0F091E, #2B62BB);
     background-image: -webkit-gradient(to bottom, #0F091E, #2B62BB);
-    -webkit-border-radius: 55px;
-    -moz-border-radius: 55px;
-    border-radius: 55px;
-    height: 200px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    height: 100px;
     line-height: 39px;
     color: #FFFFFF;
-    font-family: Bungee Shade;
-    width: 500px;
-    font-size: 100px;
-    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 300px;
+    font-size: 50px;
+    font-weight: 500;
     padding: 33px;
     -webkit-box-shadow: -4px 11px 21px 7px #000000;
     -moz-box-shadow: -4px 11px 21px 7px #000000;
@@ -49,3 +55,4 @@ button{
     border-radius: 20px;
     text-decoration: none;
  }
+ 
