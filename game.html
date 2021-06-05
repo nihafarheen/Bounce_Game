@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+    <title>Game</title>
+</head>
+<body>
+    <div id="score">
+        <h3>Score</h3>
+        <h2 id="_score">10</h2>
+    </div>
+    <div id="life">
+        <h3>Life</h3>
+        <h2 id="_life">10</h2>
+    </div>
+    <canvas id="canvas" width="1000" height="600"></canvas>
+    <audio autoplay >
+        <source src="bgm.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <script src="model.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
